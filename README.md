@@ -36,7 +36,7 @@ The software has to be executed with priviliges, because the PTP client binds to
 ## Test Environment
 This software was tested with a Midas M32R connected via USB to a 2011 iMac.  Using that equipment I was successfully able to put 32 channels of audio onto the network and recieve them using Ravenna Virtual Soundcard on MacOS Ventura, and record to Pro Tools.  I was also able to use Dante Controller to send the channels to another console (a SoundCraft Si Impact with a Dante Card).  
 
-### Latency cosiderations (from philhartung's original version)
+### Latency considerations (from philhartung's original version)
 In practice low latency is important. Especially when working in a hybrid Dante/AES67 network, latency should be under 2ms. Dante devices are fixed to a maximum of 2ms latency and drop packets with higher latency. With a Raspberry Pi, latency jitter is quite high. A lot/too many packets are dropped because latency is too high when sending audio to a Dante receiver. 
 ### Latency Notes from me
 In my experience there was very little (if any) packet loss from the iMac, even with its age.  I will continue to test the software on newer machines and perhaps an RPi (if I can get one!). The network used for testing is installed at The Loft Live, a music venue in Columbus, GA, using their consoles and computers for development.  The network uses one managed switch and two satellite gigabit unmanaged switches with WiFi APs next to the consoles.  All of the networking equipment is off-the-shelf, made by Netgear.
