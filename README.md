@@ -4,7 +4,7 @@ The enhanced edition adds support for channel mapping as well as the automatic c
 This software also properly converts 32-bit floating point audio from the soundcard into actual 24-bit audio as specified in AES67, making it suitable for professional audio applications.
 
 ## Installation
-To install aes67-sender, clone the repository and install the dependencies.
+To install aes67-sender-enhanced, clone the repository and install the dependencies.
 ```
 git clone https://github.com/teletype1/aes67-sender-enhanced.git
 cd aes67-sender-enhanced
@@ -13,7 +13,7 @@ npm install
 Audify (audio backend used) prebuilds are available for most major platforms and Node versions. If you need to build Audify from source, see https://github.com/almogh52/audify#requirements-for-source-build.
 
 ## Usage
-To display the help, execute `node aes67 --help`:
+To display the help, execute `node aes67-sender-enhanced --help`:
 ```
 Usage: aes67 [options]
 
@@ -22,12 +22,14 @@ Options:
   -v, --verbose            enable verbosity
   --devices                List audio devices
   -d, --device <index>     Which audio device to use.  Use --devices to see a list and corresponding device index numbers.
-  -m, --mcast <address>    First address to multicast the AES67 stream.  Leave space for more addresses if you plan to stream more than 8 channels.
-  -n, --streamname <name>  name of AES67 stream(s).  "-Bank-" will automatically be added with a bank number, corresponding to groups of 8 channels.
-  -c, --channels <number>  number of channels
+  -m, --mcast <address>    First address to multicast the AES67 stream.  
+                           Leave space for more addresses if you plan to stream more than 8 channels.
+  -n, --streamname <name>  Name of AES67 stream(s).  "-Bank-" will automatically be added with a bank number, 
+                           corresponding to groups of up to 8 channels.
+  -c, --channels <number>  Number of channels.  Must match the patch list (below) or be less than the total channel available from the device.
   -p, --patch <list>       Channel Map from the input device, in the order you would like them, separated by commas. (i.e., 1,2,3,5,7,8,12,etc).
                            Channels do not need to be in the order they come from the soundcard, and can be repeated.
-  -a, --api <api>          audio api (ALSA, OSS, PULSE, JACK, MACOS, ASIO, DS, WASAPI)
+  -a, --api <api>          Audio API/Driver to use (ALSA, OSS, PULSE, JACK, MACOS, ASIO, DS, WASAPI)
   --address <address>      IPv4 address of network interface
   -h, --help               display help for command
 ```
