@@ -1,5 +1,6 @@
 # AES67 Sender Enhanced
-This program expands on the original work by https://github.com/philhartung to make soundcard input available on an AES67 network. 
+This program expands on the original work by https://github.com/philhartung to make soundcard input available on an AES67 network using Node.js.
+
 The enhanced edition adds support for channel mapping as well as the automatic creation of multiple AES67 flows when needed.
 This software also properly converts 32-bit floating point audio from the soundcard into actual 24-bit audio as specified in AES67, making it suitable for professional audio applications.
 
