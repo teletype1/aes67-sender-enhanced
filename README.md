@@ -49,4 +49,6 @@ In my experience there was very little (if any) packet loss from the iMac, even 
 In reality this software is probably not suitable for "live" applications - like feeding a monitor console.  However, it may be useful for broadcast applications (especially where a delay is inherint in the video system), and it is definitely useful for recording of live performances with higher channel counts.  Since I also teach live mixing at Columbus State University, it will be useful for taking the raw channels from the stage box in one room, and putting them on a second console in another room, so students can mix real audio for practice and learn without an audience, but with actual sound happening live in another room.  This is much more fashionable than practicing mixing with recorded tracks :)
 
 Here is a screenshot of Dante Controller-reported latency when transmitting 32 channels for about an hour from the Midas/iMac to the Soundcraft.
+
+
 ![Screenshot](doc/latency.png "latency")
