@@ -1,0 +1,28 @@
+{
+  "name": "aes67-sender-enhanced",
+  "version": "1.0",
+  "description": "Make a soundcard input available on a AES67 network",
+  "main": "aes67.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teletype1/aes67-sender-enhanced.git"
+  },
+  "keywords": [
+    "aes67",
+    "aoip"
+  ],
+  "author": "Matthew McCabe",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/teletype1/aes67-sender-enhanced/issues"
+  },
+  "homepage": "https://github.com/teletype1/aes67-sender-enhanced#readme",
+  "dependencies": {
+    "audify": "^1.5.2",
+    "commander": "^6.1.0",
+    "ptpv2": "^1.0.6"
+  }
+}
