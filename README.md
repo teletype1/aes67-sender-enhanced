@@ -15,7 +15,7 @@ Audify (audio backend used) prebuilds are available for most major platforms and
 ## Usage
 To display the help, execute `node aes67-sender-enhanced --help`:
 ```
-Usage: aes67 [options]
+Usage: aes67-sender-enhanced [options]
 
 Options:
   -V, --version            output the version number
